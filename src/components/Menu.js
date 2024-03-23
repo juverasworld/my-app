@@ -33,7 +33,7 @@ const Menu = () => {
           <div className="menu-logo">
             <Link href="/">Vera</Link>
           </div>
-          <div className="meu-close" onClick={toggleMenu}>
+          <div className="menu-close" onClick={toggleMenu}>
             <p>close</p>
           </div>
         </div>
@@ -52,8 +52,8 @@ const Menu = () => {
               </div>
             ))}
           </div>
-          <div className="menu-info">
-            <div className="meu-info-col">
+          <div classNaB="menu-info">
+            <div className="menu-info-col">
 <a href="#">X &#8599;</a>
 <a href="#">Instagram &#8599;</a>
 <a href="#">LinkedIn &#8599;</a>
