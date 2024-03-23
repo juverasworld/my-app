@@ -24,7 +24,7 @@ const Menu = () => {
         <div className="menu-logo">
           <Link href="/">Vera</Link>
         </div>
-        <div className="menu-open">
+        <div className="menu-open" onClick={toggleMenu}>
           <p className="">Menu</p>
         </div>
       </div>
@@ -33,7 +33,7 @@ const Menu = () => {
           <div className="menu-logo">
             <Link href="/">Vera</Link>
           </div>
-          <div className="meu-close">
+          <div className="meu-close" onClick={toggleMenu}>
             <p>close</p>
           </div>
         </div>
@@ -42,19 +42,35 @@ const Menu = () => {
         </div>
         <div className="menu-copy">
           <div className="menu-links">
-            {menuLinks.map((link, index)=>{
+            {menuLinks.map((link, index) => (
               <div className="menu-link-item" key={index}>
-                <div className="menu-link-item-holder">
+                <div className="menu-link-item-holder" onClick={toggleMenu}>
                   <Link href={link.path} className="menu-link">
                     {link.label}
                   </Link>
                 </div>
               </div>
-            })}
+            ))}
           </div>
-          <div className="menu-info"></div>
+          <div className="menu-info">
+            <div className="meu-info-col">
+<a href="#">X &#8599;</a>
+<a href="#">Instagram &#8599;</a>
+<a href="#">LinkedIn &#8599;</a>
+<a href="#">Behance &#8599;</a>
+<a href="#">Dribble &#8599;</a>
+
+            </div>
+            <div className="menu-info-col">
+              <p>info@vera.gmail.com</p>
+              <p>0915732332222</p>
+            </div>
+          </div>
         </div>
-        <div className="menu-preview"></div>
+        <div className="menu-preview">
+          
+          <p>View Showreel</p>
+        </div>
       </div>
     </div>
   );
