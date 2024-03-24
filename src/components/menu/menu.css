@@ -12,7 +12,7 @@
 }
 
 .menu-bar a,
-.meu-open p {
+.menu-open p {
     color: #fff;
     cursor: pointer;
 }
@@ -32,6 +32,8 @@
     background-color: #c5fb45;
     z-index: 2;
     display: flex;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100% );
+
 }
 
 .menu-close-icon {
@@ -54,4 +56,51 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+.menu-close-icon p{
+    font-size: 100px;
+    -webkit-text-stroke:3px #c5fb45;
+    list-style: 70%;
+}
+
+.menu-link-item{
+    width: max-content;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100% );
+}
+.menu-link-item-holder{
+    position: relative;
+}
+
+.menu-link-item a{
+    color: #000;
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 85%;
+}
+
+.menu-info{
+    display: flex;
+}
+
+.menu-info-col{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+@media (max-width:900px) {
+    .menu-close-icon{
+        display: none;
+    
+    }
+.menu-copy{
+    padding-top: 8em;
+}
+
+.menu-link-item-holder a {
+    font-size: 60px;
+}
 }
